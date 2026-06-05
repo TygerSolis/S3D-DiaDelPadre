@@ -276,15 +276,16 @@
             return `
             <div class="print-break-avoid bg-white rounded-[20px] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full group mb-8 print-shadow-none">
                 
-                <!-- Contenedor adaptativo: Sin fondo extra, se adapta al ancho/alto natural de la foto -->
-                <div id="wrapper-${producto.id}" data-current-index="0" class="img-wrapper relative w-full flex items-center justify-center border-b border-gray-100 cursor-pointer group/img bg-white p-4 sm:p-6" onclick="abrirModal(${producto.id}, parseInt(this.getAttribute('data-current-index')))">
+                <!-- Contenedor de la imagen FIJO Y ESTANDARIZADO -->
+                <!-- Se establece una altura fija (h-64 sm:h-72) y fondo blanco para asegurar uniformidad -->
+                <div id="wrapper-${producto.id}" data-current-index="0" class="img-wrapper relative w-full h-64 sm:h-72 flex items-center justify-center border-b border-gray-100 cursor-pointer group/img bg-white p-4" onclick="abrirModal(${producto.id}, parseInt(this.getAttribute('data-current-index')))">
 
-                    <!-- Imagen principal (Producto) con medidas automáticas -->
+                    <!-- Imagen principal usando object-contain para no recortarse -->
                     <img 
                         id="${mainImgId}"
                         src="${producto.imagenes[0]}" 
                         alt="${producto.nombre}"
-                        class="max-w-full max-h-[24rem] w-auto h-auto object-contain object-center transition-transform duration-700 ease-in-out group-hover/img:scale-105 relative z-10 drop-shadow-md"
+                        class="w-full h-full object-contain object-center transition-transform duration-700 ease-in-out group-hover/img:scale-105 relative z-10"
                         onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Añadir+Foto'"
                     />
                     
