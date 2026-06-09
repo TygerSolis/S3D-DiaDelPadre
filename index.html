@@ -111,25 +111,78 @@
     </nav>
 
     <!-- --- HERO SECTION WEB --- -->
-    <header class="bg-white border-b border-gray-100">
+    <header class="bg-white border-b border-gray-100 pb-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
             <div class="max-w-3xl">
                 <h2 class="font-title text-4xl md:text-5xl font-extrabold text-brand-900 mb-4 tracking-tight">Colección <span class="text-brand-accent">DÍA DEL PADRE</span></h2>
-                <p class="text-gray-500 text-lg md:text-xl leading-relaxed font-light mb-8">El regalo perfecto para sorprender a papá en su día. Diseños únicos y prácticos impresos en 3D con máxima calidad.</p>
-                
-                <div class="flex flex-wrap gap-4 md:gap-8">
-                    <div class="flex items-center gap-2 text-sm font-medium text-gray-700">
-                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-brand-accent"><i data-lucide="check-circle-2" class="w-4 h-4"></i></div>
-                        Regalo Original
+                <p class="text-gray-500 text-lg md:text-xl leading-relaxed font-light">El regalo perfecto para sorprender a papá en su día. Diseños únicos y prácticos impresos en 3D con máxima calidad.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- --- SECCIÓN DE CARACTERÍSTICAS PREMIUM --- -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12 relative z-10 no-print">
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100">
+            <h3 class="font-title text-xl font-bold text-brand-900 mb-6 flex items-center gap-2">
+                <i data-lucide="gem" class="w-5 h-5 text-brand-accent"></i>
+                Calidad Premium en cada pieza
+            </h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <!-- Feature 1 -->
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 mt-1">
+                        <div class="w-10 h-10 rounded-full bg-[#f8fafc] flex items-center justify-center text-brand-accent border border-gray-100">
+                            <i data-lucide="layers" class="w-5 h-5"></i>
+                        </div>
                     </div>
-                    <div class="flex items-center gap-2 text-sm font-medium text-gray-700">
-                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-brand-accent"><i data-lucide="gift" class="w-4 h-4"></i></div>
-                        Listo para Papá
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1 tracking-tight">Diseño de alta fidelidad</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed text-justify">Impreso 100% en 3D con tecnología de precisión digital; todos los logos y detalles estructurales están integrados en relieve directo en la pieza, garantizando cero stickers o calcomanías que se despeguen.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 mt-1">
+                        <div class="w-10 h-10 rounded-full bg-[#f8fafc] flex items-center justify-center text-brand-accent border border-gray-100">
+                            <i data-lucide="shield-check" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1 tracking-tight">Blindaje premium</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed text-justify">Cubierto con resina UV que sella la pieza, garantizando máxima protección y durabilidad.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 mt-1">
+                        <div class="w-10 h-10 rounded-full bg-[#f8fafc] flex items-center justify-center text-brand-accent border border-gray-100">
+                            <i data-lucide="sparkles" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1 tracking-tight">Acabado artesanal</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed text-justify">Pulido y detallado minuciosamente a mano para lograr una superficie impecable libre de líneas de impresión.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 mt-1">
+                        <div class="w-10 h-10 rounded-full bg-[#f8fafc] flex items-center justify-center text-brand-accent border border-gray-100">
+                            <i data-lucide="palette" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1 tracking-tight">Estética japonesa</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed text-justify">Terminado con técnicas de sombreado y contraste inspiradas en el arte tradicional japonés para realzar su volumen y darle un carácter único.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- --- GRID DE PRODUCTOS --- -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -145,7 +198,7 @@
                 <div>
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center overflow-hidden">
-                            <img src="S3D.jpeg" alt="Logo S3D" class="w-full h-full object-cover">
+                            <img src="S3D.jpeg" alt="Logo S3D" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/100x100/ffffff/0f172a?text=S3D'">
                         </div>
                         <div>
                             <h3 class="font-title text-2xl font-black tracking-wider">S3D</h3>
@@ -279,12 +332,12 @@
                 <!-- Contenedor de la imagen FIJO Y ESTANDARIZADO -->
                 <div id="wrapper-${producto.id}" data-current-index="0" class="img-wrapper relative w-full h-64 sm:h-72 flex items-center justify-center border-b border-gray-100 cursor-pointer group/img bg-white p-4" onclick="abrirModal(${producto.id}, parseInt(this.getAttribute('data-current-index')))">
 
-                    <!-- Imagen principal -->
+                    <!-- Imagen principal (Tamaño automático contenido) -->
                     <img 
                         id="${mainImgId}"
                         src="${producto.imagenes[0]}" 
                         alt="${producto.nombre}"
-                        class="w-full h-full object-contain object-center transition-transform duration-700 ease-in-out group-hover/img:scale-105 relative z-10"
+                        class="w-auto h-auto max-w-full max-h-full object-contain object-center transition-transform duration-700 ease-in-out group-hover/img:scale-105 relative z-10"
                         onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Añadir+Foto'"
                     />
                     
@@ -296,7 +349,7 @@
                     </div>
                 </div>
 
-                <!-- GALERÍA DE MINIATURAS (DISEÑO LIMPIO) -->
+                <!-- GALERÍA DE MINIATURAS (DISEÑO LIMPIO, SIN TEXTO) -->
                 ${producto.imagenes.length > 1 ? `
                 <div class="flex flex-wrap justify-center gap-3 p-4 bg-white border-b border-gray-100 no-print relative z-30 shadow-[0_-10px_20px_-15px_rgba(0,0,0,0.05)]">
                     ${producto.imagenes.map((img, index) => {
@@ -320,7 +373,7 @@
                 <div class="print-card-body p-6 flex flex-col flex-grow bg-white relative z-30">
                     <h3 class="print-title font-title text-lg font-bold text-brand-900 leading-tight mb-2 group-hover:text-brand-accent transition-colors">${producto.nombre}</h3>
                     
-                    <!-- Descripción con texto JUSTIFICADO y SIN recortes (line-clamp eliminado) -->
+                    <!-- Descripción con texto JUSTIFICADO y SIN recortes -->
                     <p class="print-text-sm text-gray-500 text-sm leading-relaxed flex-grow text-justify">${producto.descripcion}</p>
                     
                     <!-- Precio y Botón de Acción -->
